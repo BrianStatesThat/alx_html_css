@@ -1,0 +1,34 @@
+/* styles.css */
+/* Rule 1: Both containers must be flexboxes */
+body, main {
+  display: flex;
+}
+
+/* Rule 2: Body is column (header, main, footer) */
+body {
+  flex-direction: column;
+}
+
+/* Rule 2: Main is row (article, aside) */
+main {
+  flex-direction: row;
+}
+
+/* Rule 3: Main keeps automatic height/width */
+main {
+  flex: auto;
+}
+
+/* Rule 4: Content width distribution */
+article {
+  flex: 2;  /* Takes 2/3 width */
+}
+
+aside {
+  flex: 1;   /* Takes 1/3 width */
+}
+
+/* Rule 5: Scrollable content areas */
+article, aside {
+  overflow-y: auto;
+}
