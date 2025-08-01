@@ -8,11 +8,15 @@ body, main {
 /* Rule 2: Body is a column (for header, main, and footer) */
 body {
   flex-direction: column;
+  background: #f5f7fa;
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 /* Rule 2: Main is a row (for article and aside) */
 main {
   flex-direction: row;
+  background: linear-gradient(90deg, #e0eafc, #cfdef3);
 }
 
 /* Rule 3: Main keeps automatic height/width and grows to fill available space */
@@ -32,4 +36,59 @@ aside {
 /* Rule 5: Scrollable content areas if content exceeds the container's height */
 article, aside {
   overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 16px;
+  background: #fff;
+}
+
+header {
+  background: #005fa3;
+  color: #fff;
+}
+
+a {
+  color: #0077cc;
+}
+
+a:hover {
+  color: #005fa3;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+header li {
+  margin-right: 24px;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+th, td {
+  padding: 8px 12px;
+  border: 1px solid #bbb;
+}
+
+th {
+  background: #f0f0f0;
 }
